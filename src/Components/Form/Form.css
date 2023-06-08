@@ -1,0 +1,53 @@
+*{
+    font-size: 16px;
+}
+
+.card{
+    min-width: 54rem;
+    border-radius: 2rem !important;
+}
+
+.btn-custom{
+    background-color: hsl(234, 29%, 20%) !important;
+    color: white !important;
+}
+
+.btn-custom:hover{
+    background-color: hsl(4, 100%, 67%) !important;
+    color: white !important;
+    transition: 0.3 all ease-in-out;
+    box-shadow: 0 0 10px hsl(4, 100%, 67%);
+}
+
+.title{
+    color: hsl(234, 29%, 20%);
+    font-weight: 700;
+}
+
+.form-label{
+    font-size: 12px;
+}
+
+.design{
+    max-height: 550px;
+}
+
+@media (max-width: 767px){
+    .img-container{
+        width: 100vw;
+        display: block;
+    }
+    
+    .design{
+        width: 100vw !important;
+        object-fit: cover;
+        border-bottom-right-radius: 30px 30px;
+        border-bottom-left-radius: 30px 30px;
+
+    }
+
+    .card{
+        border-bottom-left-radius: 0 !important;
+        border-bottom-right-radius: 0 !important;
+    }
+}
