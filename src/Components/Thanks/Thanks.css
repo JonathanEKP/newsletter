@@ -1,0 +1,42 @@
+#card-thanks{
+    max-width: 350px;
+}
+
+.btn-custom{
+    background-color: hsl(234, 29%, 20%) !important;
+    color: white !important;
+}
+
+.btn-custom:hover{
+    background-color: hsl(4, 100%, 67%) !important;
+    color: white !important;
+    transition: 0.3 all ease-in-out;
+    box-shadow: 0 0 10px hsl(4, 100%, 67%);
+}
+
+.thanks-title{
+    color: hsl(234, 29%, 20%);
+    font-weight: 700;
+}
+
+.icon-succes{
+    width: 50px;
+}
+
+.text{
+    font-size: 14px;
+}
+
+@media (max-width: 767px){
+    #card-thanks{
+        min-height: 100vh;
+        min-width: 100vw;
+        border-radius: 0 !important;
+        display: grid;
+        place-content: center;
+    }
+    .thanks-title{
+        font-size: 35px !important;
+
+    }
+}
