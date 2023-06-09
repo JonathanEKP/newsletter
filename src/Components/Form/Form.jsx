@@ -3,27 +3,25 @@ import "./Form.css";
 import mobileDesign from "../../assets/images/illustration-sign-up-mobile.svg";
 import desktopDesign from "../../assets/images/illustration-sign-up-desktop.svg";
 import iconList from "../../assets/images/icon-list.svg";
-import {useNavigate} from "react-router-dom"
+import { useNavigate } from "react-router-dom";
 import { NewsletterContext } from "../../Context/NewsletterContext";
 
 function Form() {
-  const {setEmail} = useContext(NewsletterContext)
-  const navigate = useNavigate()
-  function validarInput(e){
-    const emailInput = document.getElementById('emailInput').value
-    e.preventDefault()
-    const form = document.querySelector(".needs-validation")
-    if (form.checkValidity() == false ) {
-      form.classList.add("was-validated")
-      
-    }
-    else if(emailInput !== ""){
-      navigate('/thanks')
+  const { setEmail } = useContext(NewsletterContext);
+  const navigate = useNavigate();
+  function validarInput(e) {
+    const emailInput = document.getElementById("emailInput").value;
+    e.preventDefault();
+    const form = document.querySelector(".needs-validation");
+    if (form.checkValidity() == false) {
+      form.classList.add("was-validated");
+    } else if (emailInput !== "") {
+      navigate("/thanks");
     }
   }
 
-  function irHaciaThanks(){
-    navigate('/thanks')
+  function irHaciaThanks() {
+    navigate("/thanks");
   }
   return (
     <section className="card border-0 card-form">
@@ -64,7 +62,7 @@ function Form() {
                 type="email"
                 className="form-control w-100 p-3 "
                 placeholder="email@company.com"
-                onChange={(e)=> setEmail(e.target.value)}
+                onChange={(e) => setEmail(e.target.value)}
                 required
               />
               <div className="valid-feedback">Looks good!</div>
