@@ -78,7 +78,7 @@ function Form() {
             </form>
           </div>
 
-          <div className="col-md-6 col-12 img-container order-md-2 order-1 ">
+          <div className="col-md-6 col-12 img-container order-md-2 order-1 d-md-flex justify-content-md-end">
             <source media="(min-width: 767px" srcSet={mobileDesign} />
             <img
               src={desktopDesign}
